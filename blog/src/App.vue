@@ -9,8 +9,19 @@
     <!-- <h1>Props In Vuejs</h1>
     <Child v-bind:users="users" /> -->
 
-    <h1>{{ title }}</h1>
-    <Child1 v-on:changetitle="updatetitle($event)" />
+    <!-- <h1>{{ title }}</h1>
+    <Child1 v-on:changetitle="updatetitle($event)" /> -->
+    <!-- <h1>SignUp Form</h1>
+    <SignUp /> -->
+    <!-- <h1>Login Form</h1>
+    <Login /> -->
+    <!-- <h1>VALIDATION FORM</h1>
+    <Login1 /> -->
+    <!-- <h1>Filter In Vue</h1>
+    {{ name | Ucase }}
+    <Home2 /> -->
+    <h1>beforeCreate and created lifecycle hooks</h1>
+    <Home2 />
   </div>
 </template>
 
@@ -20,7 +31,12 @@
 //import Home1 from "./components/Home1.vue";
 //import DataBind from "./components/DataBind.vue";
 //import Child from "./components/Child.vue";
-import Child1 from "./components/Child1.vue";
+//import Child1 from "./components/Child1.vue";
+//import SignUp from "./components/SignUp.vue";
+//import Login from "./components/Login.vue";
+//import Login1 from "./components/Login1.vue";
+import Home2 from "./components/Home2.vue";
+
 export default {
   name: "App",
   components: {
@@ -29,16 +45,25 @@ export default {
     //Home1,
     //DataBind,
     //Child,
-    Child1,
+    //Child1,
+    //SignUp,
+    //Login,
+    //Login1,
+    Home2,
   },
-  data() {
-    return { title: "props tutorial" };
-  },
-  methods: {
-    updatetitle(title) {
-      this.title = title;
-    },
-  },
+  // data() {
+  //   return {
+  //     name: "mayuri patel",
+  //   };
+  // },
+  // data() {
+  //   return { title: "props tutorial" };
+  // },
+  // methods: {
+  //   updatetitle(title) {
+  //     this.title = title;
+  //   },
+  // },
   // data() {
   //   return {
   //     users: [

@@ -11,5 +11,18 @@ export default {
       this.$emit("changetitle", "parent updated");
     },
   },
+
+  beforeMount: function () {
+    console.log("beforeMount");
+  },
+  mounted: function () {
+    console.log("mounted");
+  },
+  created: function () {
+    console.log("created");
+  },
+  beforeCreate: function () {
+    console.log("beforecreated");
+  },
 };
 </script>
