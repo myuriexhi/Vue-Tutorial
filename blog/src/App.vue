@@ -20,8 +20,10 @@
     <!-- <h1>Filter In Vue</h1>
     {{ name | Ucase }}
     <Home2 /> -->
-    <h1>beforeCreate and created lifecycle hooks</h1>
-    <Home2 />
+    <!-- <h1>beforeCreate and created lifecycle hooks</h1>
+    <Home2 /> -->
+
+    <EditForm />
   </div>
 </template>
 
@@ -35,7 +37,8 @@
 //import SignUp from "./components/SignUp.vue";
 //import Login from "./components/Login.vue";
 //import Login1 from "./components/Login1.vue";
-import Home2 from "./components/Home2.vue";
+//import Home2 from "./components/Home2.vue";
+import EditForm from "./components/EditForm.vue";
 
 export default {
   name: "App",
@@ -49,7 +52,8 @@ export default {
     //SignUp,
     //Login,
     //Login1,
-    Home2,
+    // Home2,
+    EditForm,
   },
   // data() {
   //   return {
