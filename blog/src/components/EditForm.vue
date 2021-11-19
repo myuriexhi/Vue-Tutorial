@@ -1,30 +1,28 @@
 <template>
-  <div id="app">
-    <div class="row">
-      <h1><b>Data Form</b></h1>
+  <div class="row">
+    <h1><b>Edit Form</b></h1>
+    <center>
+      <b>First Name:</b>
+      <input
+        type="text"
+        v-model="user.firstName"
+        :disabled="!isEditing"
+        :class="{ view: !isEditing }"
+      /><br /><br />
+      <b>Last Name:</b>
+      <input
+        type="text"
+        v-model="user.lastName"
+        :disabled="!isEditing"
+        :class="{ view: !isEditing }"
+      /><br /><br />
       <center>
-        <b>First Name:</b>
-        <input
-          type="text"
-          v-model="user.firstName"
-          :disabled="!isEditing"
-          :class="{ view: !isEditing }"
-        /><br /><br />
-        <b>Last Name:</b>
-        <input
-          type="text"
-          v-model="user.lastName"
-          :disabled="!isEditing"
-          :class="{ view: !isEditing }"
-        /><br /><br />
-        <center>
-          <button @click="isEditing = !isEditing">
-            {{ isEditing ? "Save" : "Edit" }}</button
-          >&nbsp;
-          <button v-if="isEditing" @click="isEditing = false">Cancel</button>
-        </center>
+        <button @click="isEditing = !isEditing">
+          {{ isEditing ? "Save" : "Edit" }}</button
+        >&nbsp;
+        <button v-if="isEditing" @click="isEditing = false">Cancel</button>
       </center>
-    </div>
+    </center>
   </div>
 </template>
 
@@ -35,8 +33,8 @@ export default {
     return {
       isEditing: false,
       user: {
-        firstName: "John",
-        lastName: "Smith",
+        firstName: "mayuri",
+        lastName: "patel",
       },
     };
   },
@@ -50,7 +48,7 @@ export default {
   color: initial;
 }
 .row {
-  background-color: lightcoral;
+  background-color: rgb(241, 191, 191);
   margin-left: 700px;
   margin-right: 700px;
 }
