@@ -48,7 +48,7 @@ export default {
   color: initial;
 }
 .row {
-  background-color: rgb(241, 191, 191);
+  background-color: lightblue;
   margin-left: 700px;
   margin-right: 700px;
 }
